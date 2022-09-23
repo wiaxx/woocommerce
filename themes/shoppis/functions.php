@@ -16,6 +16,8 @@ function add_woocommerce_support()
 
 add_action('after_setup_theme', 'add_woocommerce_support');
 
+// remove woocommerce sidebar
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
 // Lägg till font
 function add_google_fonts()
