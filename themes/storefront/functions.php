@@ -69,3 +69,23 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
  */
+
+//  Funktion för meddelande om fri frakt
+add_action('woocommerce_before_cart', 'single_product_cart_notice');
+
+function single_product_cart_notice(){
+
+	$cart_total = WC()->cart->subtotal;
+	$minimum_amount = 399;
+	
+	wc_clear_notices();
+
+	if ($cart_total < $minimum_amount){
+		wc_print_notice($minimum_amount - $cart_total . "kr kvar för att få fri frakt!");
+	} else {
+		wc_print_notice("Du har fått fri frakt!");
+
+	}
+
+	wc_clear_notices();
+}
