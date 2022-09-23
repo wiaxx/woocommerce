@@ -1,5 +1,13 @@
 <?php
 
+// enqueue style.css
+function test_theme_enqueue_styles()
+{
+    wp_enqueue_style('style-css', get_stylesheet_uri());
+}
+
+add_action('wp_enqueue_scripts', 'test_theme_enqueue_styles', 11);
+
 // add support for woocommerce
 function add_woocommerce_support()
 {
