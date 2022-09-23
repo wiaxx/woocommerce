@@ -8,6 +8,13 @@ function mytheme_add_woocommerce_support()
 add_action('after_setup_theme', 'mytheme_add_woocommerce_support');
 
 
+// Lägg till font
+function add_google_fonts() {
+
+    wp_enqueue_style('add_google_fonts', 'https://fonts.google.com/specimen/Libre+Baskerville?query=Libre+Baskerville', false);
+
+    add_action('wp_enqueue_scripts', 'add_google_fonts');
+}
 
 //  Funktion för meddelande om fri frakt
 add_action('woocommerce_before_cart', 'single_product_cart_notice');
