@@ -8,6 +8,12 @@ function test_theme_enqueue_styles()
 
 add_action('wp_enqueue_scripts', 'test_theme_enqueue_styles', 11);
 
+// create menus
+register_nav_menus(array(
+    'main-menu' => esc_html__('Main menu', 'shoppis'),
+    'footer-menu' => esc_html__('Footer menu', 'shoppis')
+));
+
 // add support for woocommerce
 function add_woocommerce_support()
 {
