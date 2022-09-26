@@ -11,7 +11,8 @@ add_action('wp_enqueue_scripts', 'test_theme_enqueue_styles', 11);
 // create menus
 register_nav_menus(array(
     'main-menu' => esc_html__('Main menu', 'shoppis'),
-    'footer-menu' => esc_html__('Footer menu', 'shoppis')
+    'first-footer-menu' => esc_html__('First footer menu', 'shoppis'),
+    'second-footer-menu' => esc_html__('Second footer menu', 'shoppis')
 ));
 
 // add support for woocommerce
