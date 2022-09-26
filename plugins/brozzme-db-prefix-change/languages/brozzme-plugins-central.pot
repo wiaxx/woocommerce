@@ -1,0 +1,89 @@
+# Copyright (C) 2017 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/central2del\n"
+"POT-Creation-Date: 2017-06-21 13:39:08+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: brozzme_plugins_page.php:85
+msgid "Thank you for using Brozzme plugins, "
+msgstr ""
+
+#: brozzme_plugins_page.php:86
+msgid "If you like <strong>Brozzme</strong> plugins, please leave ratings %1s. A huge thanks in advance!"
+msgstr ""
+
+#: brozzme_plugins_page.php:139
+msgid "See more details about this plugin"
+msgstr ""
+
+#: brozzme_plugins_page.php:141
+msgid "Version: "
+msgstr ""
+
+#: brozzme_plugins_page.php:149
+msgid "More details"
+msgstr ""
+
+#: brozzme_plugins_page.php:155
+msgid "Already activated"
+msgstr ""
+
+#: brozzme_plugins_page.php:160
+msgid "Install this plugin"
+msgstr ""
+
+#: brozzme_plugins_page.php:179
+msgid "WELCOME IN THE BROZZME ADMIN PANEL"
+msgstr ""
+
+#: brozzme_plugins_page.php:180
+msgid "Thank you for using Brozzme plugin. Here is a general panel to show you all available Brozzme plugins to enhance your workflow and design."
+msgstr ""
+
+#: brozzme_plugins_page.php:181
+msgid "Install directly free plugin from wordpress.org without the need to search them in the repository."
+msgstr ""
+
+#: brozzme_plugins_page.php:193
+msgid "Follow Brozzme on Facebook"
+msgstr ""
+
+#: brozzme_plugins_page.php:194
+msgid "I Love My WordPress group on Facebook"
+msgstr ""
+
+#: brozzme_plugins_page.php:195
+msgid "About me"
+msgstr ""
+
+#: brozzme_plugins_page.php:202
+msgid "About"
+msgstr ""
+
+#: brozzme_plugins_page.php:205
+msgid "More information"
+msgstr ""
+
+#: brozzme_plugins_page.php:206
+msgid "Development for the web: WordPress plugins, theming, Php front & back-end developper..."
+msgstr ""
+
+#: brozzme_plugins_page.php:207
+msgid "Contact slack: "
+msgstr ""
+
+#: brozzme_plugins_page.php:288
+msgid "OK, last version installed."
+msgstr ""
+
+#: brozzme_plugins_page.php:291
+msgid "New updated available, please update this plugin."
+msgstr ""

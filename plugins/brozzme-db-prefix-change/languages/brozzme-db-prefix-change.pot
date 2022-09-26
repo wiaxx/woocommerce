@@ -1,0 +1,205 @@
+# Copyright (C) 2017 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/brozzme-db-prefix\n"
+"POT-Creation-Date: 2017-06-21 09:23:04+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: brozzme_db_prefix.php:102
+msgid "Settings"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:22 includes/brozzmeDbPSettings.php:23
+#: includes/brozzmeDbPSettings.php:30 includes/brozzmeDbPSettings.php:31
+msgid "DB PREFIX"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:43 includes/brozzmeDbPSettings.php:182
+msgid "Change Database Prefix"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:59
+msgid "Please provide a proper table prefix."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:62
+msgid "No change! Please provide a new table prefix."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:65
+msgid "You have used some characters disallowed for the table prefix. please use another prefix"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:72
+msgid "There are no tables to rename!"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:80
+msgid "All tables have been successfully updated with prefix"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:88
+msgid "The wp-config file has been successfully updated with prefix"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:91
+msgid "The wp-config file could not be updated! You have to manually update the table_prefix variable to the one you have specified:"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:95
+msgid "An error has occurred and the tables could not be updated!"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:132
+msgid "Change DB Prefix"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:133
+msgid "Help"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:134
+msgid "Brozzme"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:151
+msgid "Database Prefix Settings"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:154
+msgid "Before execute this plugin:"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:156
+msgid "Make sure your <code>wp-config.php</code> file is <strong>writable</strong>."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:157
+msgid "And check the database has <strong>ALTER</strong> rights."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:165
+msgid "Options saved."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:170
+msgid "Existing Prefix: "
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:173
+msgid " ex: wp_"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:175
+msgid "New Prefix: "
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:178
+msgid " ex: uniquekey_"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:180
+msgid "<b>Allowed characters:</b> all latin alphanumeric as well as the <strong>_</strong> (underscore)."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:221
+msgid "FAQ & HELP"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:223
+msgid "Why do I need to change the WordPress database prefix ?"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:224
+msgid ""
+"WordPress Database is like the heart for your WordPress site, as the database runs for every single information store, you need to protect it against hackers and spammers that could run automated code for SQL injections.\n"
+"Many people forget to change the database prefix in the install wizard. This makes it easier for hackers to plan a mass attack by targeting the default prefix wp_. \n"
+"To avoid them, you can protect your database by changing the database prefix which is really easy with Brozzme DB Prefix. It takes a few seconds to change the prefix."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:227
+msgid "What do I need to verify before changes ?"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:228
+msgid "MAKE SURE YOU HAVE A DATABASE BACKUP BEFORE USING THIS TOOL."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:229
+msgid "You just need to verify: "
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:230
+msgid "wp-config.php is writable on your server."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:231
+msgid "that mySQL ALTER rights are enable."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:234
+msgid "What can I do if the process fails ?"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:235
+msgid "Depending on where the fail occurs: "
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:236
+msgid "Compare prefix in the wp-config.php and in phpmyAdmin, depending on the the situation, "
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:237
+msgid "change manually $table_prefix value in wp-config.php."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:238
+msgid "suppress all tables and import the backup in phpmyAdmin."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:239
+msgid "Verify all the pre-requisite point in the previous question before processing once again."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:241
+msgid "Why can I not do it manually?"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:242
+msgid "Of course you can, but there's many occurences to modify to make it works. Not only the tables name need to be modify."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:243
+msgid "Here is the exhaustive list of what to change, "
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:244
+msgid "Tables names,"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:245
+msgid "table options: {old_prefix}user_roles option name,"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:246
+msgid "table usermeta, for each registered user, {old_prefix}capabilities and {old_prefix}user_level, option names"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:247
+msgid "if exists you'll need to also modify {old_prefix}dashboard_quick_press_last_post_id option name"
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:250
+msgid "I can\'t delete, edit anymore using phpmyAdmin with MAMP..."
+msgstr ""
+
+#: includes/brozzmeDbPSettings.php:252
+msgid "Only use lower-case characters to solve this."
+msgstr ""

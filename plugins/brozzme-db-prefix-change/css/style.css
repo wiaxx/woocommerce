@@ -1,0 +1,53 @@
+.label01 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+.ttl02 {
+	width: 150px;
+	float: left;
+}
+.cdp-container{
+   margin-top:20px;margin-bottom:10px;
+}
+.required,.error{color:#ff0000;}
+.success{ color:#04a4cc;
+    font-size:15px;
+}
+.hndle{
+	font-size: 14px;
+	padding: 8px 12px;
+	margin: 0;
+	line-height: 1.4;
+}
+#cdp-wrap-div .postbox .inside, .stuffbox .inside {
+	padding: 0 12px 12px;
+	line-height: 1.4em;
+	font-size: 13px;
+}
+.cdp{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+.cdp-data {
+	list-style-type: none;
+	list-style-position: outside;
+	list-style-image: none;
+}
+
+.form-space{
+	padding-bottom:2px;
+}
+
+.doc_toggle:hover, .see_all_table:hover, .add_table:hover{
+	cursor: pointer;
+}
+
+.add_table{
+	line-height: 2rem;
+	padding: 5px;
+
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+}
