@@ -32,3 +32,10 @@ Tested upto: 5.4
     object-fit: cover;
     object-position: center;
 }
+
+.listed-stores {
+    display: inline-block;
+    width: 180px;
+    height: 100px;
+    padding: 20px;   
+}
