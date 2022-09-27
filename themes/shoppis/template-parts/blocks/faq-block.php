@@ -1,10 +1,6 @@
-<!-- Hero Block for store info -->
+<!-- Hero Block for Store Info -->
 
-<h1 class="header-logo">
-<?php echo $site_title; ?>
-</h1>
-
-<div class="faq-block">
+<div class="hero-block">
 
 <?php 
 $image = get_field('image'); 
