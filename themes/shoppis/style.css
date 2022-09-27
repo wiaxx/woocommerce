@@ -20,3 +20,27 @@ Tested upto: 5.4
     box-sizing: border-box;
     margin: 0;
 }
+
+
+.menu-main-container {
+    /* position: absolute;
+    top: 0; */
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    padding: 0;
+}
+
+.menu-item {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    /* color: var(--white); */
+    font-family: var(--font-family-base);
+}
