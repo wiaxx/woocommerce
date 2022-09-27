@@ -33,9 +33,36 @@ Tested upto: 5.4
     object-position: center;
 }
 
+/* features/faq-block */
 .listed-stores {
     display: inline-block;
     width: 180px;
     height: 100px;
     padding: 20px;   
+}
+
+main
+=======
+/* styling main menu */
+.menu-main-container {
+    /* position: absolute;
+    top: 0; */
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    padding: 0;
+}
+
+.menu-item {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    /* color: var(--white); */
+    font-family: var(--font-family-base);
 }
