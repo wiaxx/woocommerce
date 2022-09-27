@@ -29,16 +29,17 @@ add_action('after_setup_theme', 'add_woocommerce_support');
 // remove woocommerce sidebar
 remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 
-// Lägg till font
+// adding font
 function add_google_fonts()
 {
 
-    wp_enqueue_style('add_google_fonts', 'https://fonts.google.com/specimen/Libre+Baskerville?query=Libre+Baskerville', false);
+    wp_enqueue_style('add_google_fonts', 'https://fonts.google.com/specimen/Libre+Baskerville?query=Libre+Baskerville',
+                                         'https://fonts.google.com/specimen/Montserrat?query=Montserrat', false);
 
     add_action('wp_enqueue_scripts', 'add_google_fonts');
 }
 
-//  Funktion för meddelande om fri frakt
+//  message about free shipping
 add_action('woocommerce_before_cart', 'single_product_cart_notice');
 
 function single_product_cart_notice()
