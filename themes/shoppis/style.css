@@ -20,3 +20,15 @@ Tested upto: 5.4
     box-sizing: border-box;
     margin: 0;
 }
+
+/* styling hero block */
+.hero-block {
+    height: 70vh;
+}
+
+.hero-block img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
