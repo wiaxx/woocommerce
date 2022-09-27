@@ -11,7 +11,8 @@ add_action('after_setup_theme', 'mytheme_add_woocommerce_support');
 // Lägg till font
 function add_google_fonts() {
 
-    wp_enqueue_style('add_google_fonts', 'https://fonts.google.com/specimen/Libre+Baskerville?query=Libre+Baskerville', false);
+    wp_enqueue_style('add_google_fonts', 'https://fonts.google.com/specimen/Libre+Baskerville?query=Libre+Baskerville',
+                                         'https://fonts.google.com/specimen/Montserrat?query=Montserrat', false);
 
     add_action('wp_enqueue_scripts', 'add_google_fonts');
 }
