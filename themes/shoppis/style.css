@@ -65,3 +65,36 @@ a {
     /* color: var(--white); */
     font-family: var(--font-family-base);
 }
+
+/* half text half image */
+.image-text-block {
+    display: flex;
+    height: 450px;
+}
+
+.image-block,
+.text-block {
+    width: 50vw;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.image-block img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.image-text-block:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.image-text-block~.image-text-block {
+    flex-direction: row-reverse;
+}
