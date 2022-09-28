@@ -1,3 +1,4 @@
+<!-- Intro block -->
 <div class="intro-block">
 
     <h2 class="intro-title">
