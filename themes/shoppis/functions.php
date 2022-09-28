@@ -169,3 +169,37 @@ function create_posttype()
 }
 
 add_action('init', 'create_posttype');
+
+// change position of category on single product page
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 1);
+
+// remove related products
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+
+// remove review & additional_information tags from product content
+function woo_remove_product_tabs($tabs)
+{
+    // if (!is_product()) {
+    //     unset($tabs['description']);          // Remove the description tab
+    //     unset($tabs['additional_information']);      // Remove the additional information tab
+    // }
+
+    unset($tabs['additional_information']);      // Remove the additional information tab
+    unset($tabs['reviews']);             // Remove the reviews tab
+
+    return $tabs;
+}
+
+add_filter('woocommerce_product_tabs', 'woo_remove_product_tabs', 60);
+
+// remove review & additional_information tags from product content
+// function woo_remove_product_info_if_block()
+// {
+//     if (has_block('product-highlight')) {
+//         unset($tabs['description']);          // Remove the description tab
+//         unset($tabs['additional_information']);      // Remove the additional information tab
+//     }
+// }
+
+// add_filter('woocommerce_product_tabs', 'woo_remove_product_info_if_block', 61);
