@@ -13,7 +13,7 @@ Tested upto: 5.4
     --dark-green: #617C7C;
     --dark-gray-text: #353434;
     --font-family-base: 'Montserrat', sans-serif;
-    --font-family-headings: 'Libre Baskerville';
+    --font-family-headings: 'Libre Baskerville', serif;
 }
 
 * {
@@ -21,9 +21,19 @@ Tested upto: 5.4
     margin: 0;
 }
 
+p {
+    font-family: var(--font-family-base);
+}
+
+/* header {
+    position: relative;
+    z-index: 1;
+} */
+
 /* styling hero block */
 .hero-block {
     height: 70vh;
+    width: 100vw;
 }
 
 .hero-block img {
@@ -55,6 +65,26 @@ a {
     text-decoration: none;
     /* color: var(--white); */
     font-family: var(--font-family-base);
+}
+
+/* intro block */
+.intro-block {
+    height: 260px;
+    background-color: var(--pale-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro-title, .intro-text {
+    width: 60%;
+    text-align: center;
+}
+
+.intro-title {
+    font-family: var(--font-family-headings);
+    color: var(--dark-grey-text);
 }
 
 /* product highlight block */
