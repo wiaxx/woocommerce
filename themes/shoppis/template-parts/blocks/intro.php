@@ -9,4 +9,8 @@
         <?php the_field('intro_text'); ?>
     </p>
 
+    <button>
+        <?php the_field('intro_button_text'); ?>
+    </button>
+
 </div>

@@ -89,12 +89,21 @@ header {
     color: var(--dark-grey-text);
 }
 
+.intro-block button {
+    background-color: var(--dark-green);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
 /* product highlight block */
 .product-highlight-block {
     width: 100vw;
     height: 500px;
     background-color: var(--white);
     border: 2px solid red;
+    padding: 20px;
 }
 
 .product-highlight-block .woocommerce ,
