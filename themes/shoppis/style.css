@@ -102,7 +102,6 @@ header {
     width: 100vw;
     height: 500px;
     background-color: var(--white);
-    border: 2px solid red;
     padding: 20px;
 }
 
@@ -115,15 +114,43 @@ header {
 .product-highlight-block .woocommerce .single-product .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a {
     height: 100%;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-highlight-block .woocommerce div.product div.images img {
-    width: 70%;
+    height: 80%;
     object-fit: cover;
     object-position: center;
     margin: auto;
 }
 
-.product-highlight-block .woocommerce-tabs {
+.product-highlight-block .woocommerce div.product div.summary {
+    height: 80%;
+    margin: 0;
+    font-family: var(--font-family-base);
+    color: var(--dark-gray-text);
+    padding: 10px;
+}
+
+.product-highlight-block .woocommerce div.product div.summary h1 {
+    font-family: var(--font-family-headings);
+    margin-bottom: 15px;
+}
+
+.product-highlight-block .woocommerce div.product div.summary a {
+    color: var(--dark-gray-text);
+    text-decoration: none;
+    font-family: var(--font-family-base);
+}
+
+.product-highlight-block .woocommerce div.product div.summary div,
+.product-highlight-block .woocommerce div.product div.summary p {
+    margin-bottom: 15px;
+}
+
+.product-highlight-block .woocommerce-tabs,
+.product-highlight-block .woocommerce div.product div.summary form {
     display: none;
 }
