@@ -11,6 +11,7 @@ Tested upto: 5.4
     --white: #FFFFFF;
     --pale-green: #BFC7C7;
     --dark-green: #617C7C;
+    --dark-green-opacity: #617c7c53;
     --dark-gray-text: #353434;
     --font-family-base: 'Montserrat', sans-serif;
     --font-family-headings: 'Libre Baskerville', serif;
@@ -25,15 +26,17 @@ p {
     font-family: var(--font-family-base);
 }
 
-/* header {
-    position: relative;
+header {
+    position: absolute;
     z-index: 1;
-} */
+    width: 100vw;
+}
 
 /* styling hero block */
 .hero-block {
     height: 70vh;
     width: 100vw;
+    position: relative;
 }
 
 .hero-block img {
@@ -45,9 +48,8 @@ p {
 
 /* styling main menu */
 .menu-main-container {
-    /* position: absolute;
-    top: 0; */
     width: 100%;
+    background-color: var(--dark-green-opacity);
 }
 
 .menu {
@@ -61,9 +63,9 @@ p {
     padding: 5px;
 }
 
-a {
+.menu-item a {
     text-decoration: none;
-    /* color: var(--white); */
+    color: var(--white);
     font-family: var(--font-family-base);
 }
 
