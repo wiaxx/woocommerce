@@ -22,14 +22,12 @@ Tested upto: 5.4
     margin: 0;
 }
 
-p {
+p, a {
     font-family: var(--font-family-base);
 }
 
-header {
-    position: absolute;
-    z-index: 1;
-    width: 100vw;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-headings);
 }
 
 /* styling hero block */
@@ -46,11 +44,31 @@ header {
     object-position: center;
 }
 
-/* styling main menu */
-.menu-main-container {
-    width: 100%;
+/* styling main menu and header */
+header {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
     background-color: var(--dark-green-opacity);
+    padding: 15px 10px 0 10px;
 }
+
+header a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--font-family-base);
+}
+
+.header-title {
+    text-transform: uppercase;
+}
+
+/* .menu-main-container {
+    background-color: var(--dark-green-opacity);
+} */
 
 .menu {
     display: flex;
@@ -59,8 +77,8 @@ header {
 
 .menu-item {
     list-style-type: none;
-    margin: 5px;
-    padding: 5px;
+    /* margin: 5px; */
+    /* padding: 5px; */
 }
 
 .menu-item a {
