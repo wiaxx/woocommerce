@@ -135,68 +135,67 @@ header a {
     color: var(--dark-grey-text);
 }
 
-.intro-block button {
-    background-color: var(--dark-green);
-    color: var(--white);
-    border: none;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
 /* product highlight block */
 .product-highlight-block {
     width: 100vw;
     height: 500px;
     background-color: var(--white);
     padding: 20px;
-}
-
-.product-highlight-block .woocommerce ,
-.product-highlight-block .woocommerce .single-product,
-.product-highlight-block .woocommerce .single-product .product ,
-.product-highlight-block .woocommerce .single-product .product .images,
-.product-highlight-block .woocommerce .single-product .product .images .woocommerce-product-gallery__wrapper,
-.product-highlight-block .woocommerce .single-product .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image,
-.product-highlight-block .woocommerce .single-product .product .images .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a {
-    height: 100%;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.product-highlight-block .woocommerce div.product div.images img {
-    height: 80%;
+.highlight-image {
+    flex: 1;
+    width: 45%;
+    height: 380px;
+    margin: 20px;
+}
+
+.highlight-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
-    margin: auto;
 }
 
-.product-highlight-block .woocommerce div.product div.summary {
-    height: 80%;
-    margin: 0;
-    font-family: var(--font-family-base);
+.highlight-info {
+    width: 45%;
+    height: 380px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
     color: var(--dark-gray-text);
-    padding: 10px;
+
 }
 
-.product-highlight-block .woocommerce div.product div.summary h1 {
-    font-family: var(--font-family-headings);
-    margin-bottom: 15px;
-}
-
-.product-highlight-block .woocommerce div.product div.summary a {
-    color: var(--dark-gray-text);
+.highlight-info a {
     text-decoration: none;
+    margin-bottom: 15px;
+    color: var(--dark-gray-text);
+}
+
+.highlight-title {
+    margin-bottom: 19px;
+}
+
+.highlight-price {
+    color: var(--dark-green);
+    margin-bottom: 22px;
     font-family: var(--font-family-base);
 }
 
-.product-highlight-block .woocommerce div.product div.summary div,
-.product-highlight-block .woocommerce div.product div.summary p {
-    margin-bottom: 15px;
+.highlight-description {
+    color: var(--dark-gray-text);
+    margin-bottom: 50px;
 }
 
-.product-highlight-block .woocommerce-tabs,
-.product-highlight-block .woocommerce div.product div.summary form {
-    display: none;
+.highlight-info button,
+.highlight-info button a {
+    width: 130px;
+    color: var(--white);
 }
