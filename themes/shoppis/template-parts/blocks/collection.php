@@ -7,9 +7,9 @@ $description = get_field('collections_desc');
 
 <div class="collection-block">
 
-    <h2> <?php echo $title; ?> </h2>
+    <h2 class="collection-title"> <?php echo $title; ?> </h2>
 
-    <p> <?php echo $description; ?> </p>
+    <p class="collection-desc"> <?php echo $description; ?> </p>
 
     <div class="collection-categories">
         <?php
@@ -29,7 +29,6 @@ $description = get_field('collections_desc');
 
                     <div class="collection-text">
                         <h1>
-
                             <?php echo $category->name ?>
                         </h1>
 
