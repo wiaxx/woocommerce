@@ -1,3 +1,4 @@
+<!-- Hero Block -->
 <?php
 $image = get_field('background_image');
 ?>
