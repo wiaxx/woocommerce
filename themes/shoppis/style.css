@@ -75,6 +75,7 @@ header a {
 
 .header-title {
     text-transform: uppercase;
+    color: var(--white);
 }
 
 /* styling main menu */
