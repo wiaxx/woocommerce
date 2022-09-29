@@ -76,11 +76,11 @@ a {
 .collection-categories {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .collection-category {
-    width: 45%;
+    width: 40%;
     margin: 20px;
 }
 
@@ -88,4 +88,11 @@ a {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+/* media query for screens smaller than 992px */
+@media screen and (max-width: 992px) {
+    .collection-category {
+        width: 80vw;
+    }
 }
