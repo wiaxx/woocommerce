@@ -210,3 +210,27 @@ header a {
     width: 130px;
     color: var(--white);
 }
+
+/* contact form */
+.wpcf7-form {
+    width: 50%;
+    margin: auto;
+    padding-top: 80px;
+}
+
+/* .wpcf7-form p, .wpcf7-form span {
+    margin: 10px;
+} */
+
+.wpcf7-form input, .wpcf7-form textarea {
+    width: 100%;
+    height: 35px;
+    background: var(--semi-white);
+    border: 1px solid var(--white-border);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.wpcf7-form textarea {
+    height: auto;
+}
