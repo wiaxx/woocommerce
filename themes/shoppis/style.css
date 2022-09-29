@@ -66,25 +66,44 @@ header a {
     text-transform: uppercase;
 }
 
-/* .menu-main-container {
-    background-color: var(--dark-green-opacity);
-} */
+.menu-main-container {
+    width: 29%;
+}
 
 .menu {
     display: flex;
+    justify-content: space-between;
     padding: 0;
 }
 
 .menu-item {
     list-style-type: none;
-    /* margin: 5px; */
-    /* padding: 5px; */
+    margin-right: 5px;
 }
 
 .menu-item a {
     text-decoration: none;
     color: var(--white);
     font-family: var(--font-family-base);
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.sub-menu {
+    display: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.sub-menu a,
+.sub-menu .menu-item {
+    color: var(--dark-gray-text);
+    padding: 5px;
+    margin: auto;
 }
 
 /* intro block */
