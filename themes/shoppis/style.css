@@ -69,7 +69,8 @@ a {
 /* half text half image */
 .image-text-block {
     display: flex;
-    height: 450px;
+    flex-wrap: wrap;
+    min-height: 450px;
 }
 
 .image-block,
