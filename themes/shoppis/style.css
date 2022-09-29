@@ -65,3 +65,8 @@ a {
     /* color: var(--white); */
     font-family: var(--font-family-base);
 }
+
+.footer-test {
+    font-size: 100px;
+    background-color: red;
+}
