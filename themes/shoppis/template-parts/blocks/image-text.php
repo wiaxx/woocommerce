@@ -1,3 +1,4 @@
+<!-- Half Image / Half Text Block -->
 <?php
 $image = get_field('image');
 
