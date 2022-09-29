@@ -75,6 +75,7 @@ header a {
     text-transform: uppercase;
 }
 
+/* styling main menu */
 .menu-main-container {
     width: 29%;
 }
@@ -113,6 +114,14 @@ header a {
     color: var(--dark-gray-text);
     padding: 5px;
     margin: auto;
+}
+
+/* features/faq-block */
+.listed-stores {
+    display: inline-block;
+    width: 180px;
+    height: 100px;
+    padding: 20px;   
 }
 
 /* intro block */
