@@ -65,3 +65,24 @@ a {
     /* color: var(--white); */
     font-family: var(--font-family-base);
 }
+
+.products-recommend{
+    color: #353434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.has-medium-font-size  {
+margin-left: 20%;
+margin-right: 80%;
+width: 100%;
+}
+
+.has-small-font-size {
+margin-left: 20%;
+margin-right: 80%;
+width: 100%;
+   
+
+}

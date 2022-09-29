@@ -1,4 +1,4 @@
-    
+    <div class="products-recommend">
 <?php 
 
 // For categories 
@@ -20,7 +20,8 @@
     
 
 }
+ }
+  }    
 
-}
-    
- }    
+ ?>
+ </div>
