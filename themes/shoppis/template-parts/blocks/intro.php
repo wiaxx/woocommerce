@@ -1,3 +1,4 @@
+<!-- Intro block -->
 <div class="intro-block">
 
     <h2 class="intro-title">
@@ -7,5 +8,9 @@
     <p class="intro-text">
         <?php the_field('intro_text'); ?>
     </p>
+
+    <button>
+        <?php the_field('intro_button_text'); ?>
+    </button>
 
 </div>
