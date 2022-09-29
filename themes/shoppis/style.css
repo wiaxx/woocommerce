@@ -9,6 +9,8 @@ Tested upto: 5.4
 
 :root {
     --white: #FFFFFF;
+    --white-border: #D9D9D9;
+    --semi-white: #FCFCFC;
     --pale-green: #BFC7C7;
     --dark-green: #617C7C;
     --dark-green-opacity: #617c7c53;
