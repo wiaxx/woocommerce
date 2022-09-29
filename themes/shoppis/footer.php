@@ -1,17 +1,22 @@
 
-<div class="test-footer">
-<span class="copyright"> &copy; SHOPPIS <?php echo date("Y");?>. All rights reserved.</span>
+<div class="footer-wrap">
 
-<div class="footer-test">
-<h3>Navigate</h3>
+<h3 class="footer-nav">Navigate</h3>
+<div class="nav-links">
 <a href="/">Shop</a>
 <a href="/about-us">Om oss</a>
 <a href="/stores">Våra butiker</a>
 <a href="/my-account">Logga in</a>
+</div>
 
-<h3>Information</h3>
-<a href="/privacy-policy"></a>
+<h3 class="footer-info">Information</h3>
+<div class="nav-links-2"> 
+<a href="/privacy-policy">Privacy Policy</a>
 <a href="/terms">Terms & Agreement</a>
+<h2 class="logo">SHOPPIS</h2>
 </div>
 
 </div>
+
+
+

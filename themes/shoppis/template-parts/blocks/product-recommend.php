@@ -1,20 +1,25 @@
-<!--     
-    <?php 
-     $category = get_field('product_category');
-     $product = get_field('products');
-     ?>
+<?php 
+
+// For categories 
+    $categories = get_field('categories');
+     $products = get_field('products');
+
+     if ($categories) {
+        foreach ($categories as $cat_id) {
+
+     if( $term = get_term_by( 'id', $cat_id, 'product_cat' ) ){
+      echo $term->name;
 
 
+    $thumbnail_id = get_term_meta( $cat_id, 'thumbnail_id', true ); 
 
-        <?php if ($category->have_products()) : ?>
-            <?php while ($category->have_products()) : $category->the_product(); ?>  
+    $image = wp_get_attachment_url( $thumbnail_id ); 
 
+    echo "<img src='{$image}' alt='' width='200' height='200' />";
+    
 
-            <h1>
-            <?php echo $category ?>
-            </h1>
+}
 
-            
- <?php endwhile; ?>
-    <?php wp_reset_postdata(); ?>
-    <?php endif; ?> -->
+}
+    
+ }    

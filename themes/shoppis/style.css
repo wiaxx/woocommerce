@@ -66,7 +66,41 @@ a {
     font-family: var(--font-family-base);
 }
 
-.footer-test {
-    font-size: 100px;
-    background-color: red;
+.footer-wrap {
+   background-color: #617C7C;
+   height: 200px;
+   
+}
+
+.footer-nav {
+    display:block;
+    margin-left: 100px;
+    color: #FFFFFF;
+}
+
+.nav-links a {
+    display:block;
+    margin-left: 100px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+.nav-links-2 a {
+    display:block;
+    margin-left: 300px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+.footer-info {
+    display: block;
+    margin-left: 300px;
+    margin-top: -100px;
+    color: #FFFFFF;
+}
+
+.logo {
+    float: right;
+    margin-right: 100px;
+    color: #FFFFFF;
 }
