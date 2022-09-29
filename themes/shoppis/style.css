@@ -30,6 +30,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-headings);
 }
 
+button {
+    background-color: var(--dark-green);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 /* styling hero block */
 .hero-block {
     height: 70vh;
