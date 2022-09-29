@@ -65,3 +65,27 @@ a {
     /* color: var(--white); */
     font-family: var(--font-family-base);
 }
+
+/* collection block */
+.collection-block {
+    width: 100vw;
+    background-color: var(--pale-green);
+    padding: 20px;
+}
+
+.collection-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.collection-category {
+    width: 45%;
+    margin: 20px;
+}
+
+.collection-img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
