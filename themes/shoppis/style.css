@@ -24,10 +24,13 @@ Tested upto: 5.4
 
 p, a {
     font-family: var(--font-family-base);
+    text-decoration: none;
+    color: var(--dark-gray-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-headings);
+    color: var(--dark-gray-text);
 }
 
 button {
@@ -66,13 +69,13 @@ header {
 }
 
 header a {
-    text-decoration: none;
     color: var(--white);
     font-family: var(--font-family-base);
 }
 
 .header-title {
     text-transform: uppercase;
+    color: var(--white);
 }
 
 /* styling main menu */
@@ -92,7 +95,6 @@ header a {
 }
 
 .menu-item a {
-    text-decoration: none;
     color: var(--white);
     font-family: var(--font-family-base);
 }
@@ -139,11 +141,6 @@ header a {
     text-align: center;
 }
 
-.intro-title {
-    font-family: var(--font-family-headings);
-    color: var(--dark-grey-text);
-}
-
 /* product highlight block */
 .product-highlight-block {
     width: 100vw;
@@ -183,7 +180,6 @@ header a {
 }
 
 .highlight-info a {
-    text-decoration: none;
     margin-bottom: 15px;
     color: var(--dark-gray-text);
 }
@@ -199,7 +195,6 @@ header a {
 }
 
 .highlight-description {
-    color: var(--dark-gray-text);
     margin-bottom: 50px;
 }
 
@@ -208,6 +203,54 @@ header a {
     width: 130px;
     color: var(--white);
 }
+
+/* half text half image */
+.image-text-block {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white);
+}
+
+.image-block,
+.text-block {
+    width: 50vw;
+    height: 450px;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.image-block img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.image-text-block~.image-text-block {
+    flex-direction: row-reverse;
+}
+
+.text-block a {
+    margin-bottom: 15px;
+}
+
+.text-block h2 {
+    margin-bottom: 19px;
+}
+
+.text-block p {
+    margin-bottom: 50px;
+}
+
+.text-block button {
+    width: 120px;
+}
+
 
 /* collection block */
 .collection-block {
@@ -246,6 +289,16 @@ header a {
 .collection-text p,
 .collection-text a {
     margin: 10px;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+
+.image-block, .text-block {
+    width: 100vw;
+    min-height: 450px;
+}
+
 }
 
 /* media query for screens smaller than 992px */
