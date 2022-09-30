@@ -68,11 +68,28 @@ a {
 
 .footer-wrap {
    background-color: #617C7C;
-   height: 200px;
-   
+   height: 300px;
+}
+
+#menu-first-footer {
+    display:block;
+    margin-left: 100px;
+    color: #FFFFFF;
+    
+}
+
+.menu-first-footer-container {
+    display: block;
 }
 
 .footer-nav {
+    display:block;
+    margin-left: 210px;
+    color: #FFFFFF;
+    margin-top: 100px;
+ }
+
+#menu-second-footer{
     display:block;
     margin-left: 100px;
     color: #FFFFFF;
@@ -94,13 +111,14 @@ a {
 
 .footer-info {
     display: block;
-    margin-left: 300px;
+    margin-left: 400px;
     margin-top: -100px;
     color: #FFFFFF;
 }
 
-.logo {
+.footer-logo {
     float: right;
-    margin-right: 100px;
-    color: #FFFFFF;
+    margin-right: 100px; 
+    color: #FFFFFF;  
+    margin-top: -10px;
 }
