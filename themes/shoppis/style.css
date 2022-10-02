@@ -135,6 +135,11 @@ header a {
     width: 24px;
 }
 
+.woocommerce-page header a,
+.woocommerce-page .header-title {
+    color: var(--dark-gray-text);
+}
+
 /* features/faq-block */
 .listed-stores {
     display: inline-block;
