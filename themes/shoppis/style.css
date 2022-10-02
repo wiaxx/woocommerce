@@ -56,10 +56,6 @@ button {
     object-position: center;
 }
 
-.empty {
-    height: 58px;
-}
-
 /* styling main menu and header */
 header {
     position: absolute;
@@ -69,7 +65,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: var(--white);
-    background-color: var(--dark-green-opacity);
+    /* background-color: var(--dark-green-opacity); */
     padding: 15px 10px 15px 10px;
 }
 
@@ -80,6 +76,10 @@ header a {
 .header-title {
     text-transform: uppercase;
     color: var(--white);
+}
+
+.woocommerce-page header {
+    position: relative;
 }
 
 /* styling main menu */
