@@ -444,6 +444,16 @@ div.woocommerce {
     font-family: var(--font-family-base);
 }
 
+/* customer page */
+.woocommerce-account .woocommerce-MyAccount-content {
+    width: 80vw;
+}
+
+.woocommerce-Addresses,
+.woocommerce-Address-title {
+    width: 100px;
+}
+
 /* media query */
 @media screen and (max-width: 600px) {
 
