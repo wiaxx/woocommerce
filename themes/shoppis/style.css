@@ -364,7 +364,8 @@ div.woocommerce {
 }
 
 /* cart page */
-.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce a.button.alt:hover {
     background-color: var(--dark-green);
     color: var(--white);
     border-radius: 0;
