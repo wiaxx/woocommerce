@@ -33,8 +33,12 @@ remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 function add_google_fonts()
 {
 
-    wp_enqueue_style('add_google_fonts', 'https://fonts.google.com/specimen/Libre+Baskerville?query=Libre+Baskerville',
-                                         'https://fonts.google.com/specimen/Montserrat?query=Montserrat', false);
+    wp_enqueue_style(
+        'add_google_fonts',
+        'https://fonts.google.com/specimen/Libre+Baskerville?query=Libre+Baskerville',
+        'https://fonts.google.com/specimen/Montserrat?query=Montserrat',
+        false
+    );
 
     add_action('wp_enqueue_scripts', 'add_google_fonts');
 }
@@ -170,3 +174,29 @@ function create_posttype()
 }
 
 add_action('init', 'create_posttype');
+
+// change position of category on single product page
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 1);
+
+// remove related products
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+
+// remove review & additional_information tags from product content
+function woo_remove_product_tabs($tabs)
+{
+    unset($tabs['additional_information']);      // Remove the additional information tab
+    unset($tabs['reviews']);             // Remove the reviews tab
+
+    return $tabs;
+}
+
+add_filter('woocommerce_product_tabs', 'woo_remove_product_tabs', 60);
+
+// support to add title in the_content
+function echo_title_in_post($atts, $content = null)
+{
+    return '<h1 class="info-title">' . get_the_title() . '</h1>';
+}
+
+add_shortcode('the_title', 'echo_title_in_post');
