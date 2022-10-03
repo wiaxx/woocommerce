@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php get_header(); ?>
 <?php $image = get_field('background_image'); ?>
 
@@ -20,7 +19,7 @@ $the_query = new WP_Query(array(
     <div class="thumbnail"> <?php the_post_thumbnail('medium'); ?> </div>
     <div class="news-background">
       <h3 class="all-news-title"><?php the_title(); ?> </h3>  
-      <a class="permalink" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+      <a class="permalink" href="<?php the_permalink(); ?>" title ="<?php the_title_attribute(); ?>">
 
       <span class="date"> <?php the_time(get_option('date_format')); ?> </span>
 
@@ -41,7 +40,5 @@ $the_query = new WP_Query(array(
     
 
 <?php get_footer(); ?>
-=======
 <?php get_header() ?>
 <?php get_footer(); ?>
->>>>>>> main

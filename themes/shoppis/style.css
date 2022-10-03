@@ -503,3 +503,40 @@ div.woocommerce {
 .news-background {
 background-color: #FFFFFF;
 }
+
+/* single news */
+.single-news-wrapper {
+    height: 500px;
+   
+}
+.date {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    margin-top: -340px;
+}
+
+.single-news-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.single-news-content{
+   
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.thumbnail-single {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
