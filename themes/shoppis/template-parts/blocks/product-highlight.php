@@ -24,9 +24,9 @@ endif
                 <?php echo $category ?>
             </a>
 
-            <h2 class="highlight-title">
+            <h1 class="highlight-title">
                 <?php echo $product->name; ?>
-            </h2>
+            </h1>
 
             <span class="highlight-price">
                 <?php echo $product->price; ?> SEK

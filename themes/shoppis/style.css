@@ -9,6 +9,8 @@ Tested upto: 5.4
 
 :root {
     --white: #FFFFFF;
+    --white-border: #D9D9D9;
+    --semi-white: #FCFCFC;
     --pale-green: #BFC7C7;
     --dark-green: #617C7C;
     --dark-green-opacity: #617c7c53;
@@ -224,6 +226,46 @@ header a {
     color: var(--white);
 }
 
+/* contact form */
+.wpcf7-form {
+    width: 50%;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.info-title {
+    text-align: center;
+    margin: 30px;
+}
+
+.info-page > p{
+    width: 40%;
+    margin: auto;
+}
+
+.wpcf7-form input, .wpcf7-form textarea {
+    width: 100%;
+    height: 35px;
+    background-color: var(--semi-white);
+    border: 1px solid var(--white-border);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.wpcf7-form textarea {
+    height: auto;
+}
+
+.info-page .wpcf7-submit {
+    background-color: var(--dark-green);
+    color: var(--white);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0;
+    width: 30%;
+}
+
 /* half text half image */
 .image-text-block {
     display: flex;
@@ -271,6 +313,45 @@ header a {
     width: 120px;
 }
 
+/* collection block */
+.collection-block {
+    width: 100vw;
+    background-color: var(--pale-green);
+    padding: 20px;
+}
+
+.collection-title {
+    margin: 80px 0 25px 50px;
+}
+
+.collection-desc {
+    margin: 0 0 70px 50px;
+    width: 40%;
+}
+
+.collection-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.collection-category {
+    width: 40%;
+    margin: 20px;
+}
+
+.collection-img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.collection-text h2,
+.collection-text p,
+.collection-text a {
+    margin: 10px;
+}
+
 /* woocommerce pages styling */
 div.woocommerce {
     width: 80vw;
@@ -294,9 +375,18 @@ div.woocommerce {
 /* media query */
 @media screen and (max-width: 600px) {
 
-.image-block, .text-block {
-    width: 100vw;
-    min-height: 450px;
+    .image-block, .text-block {
+        width: 100vw;
+        min-height: 450px;
+    }
+
 }
 
+/* media query for screens smaller than 992px */
+@media screen and (max-width: 992px) {
+
+    .collection-category {
+        width: 80vw;
+    }
+    
 }
