@@ -279,7 +279,16 @@ div.woocommerce {
 
 .woo-title {
     text-align: center;
-    margin-top: 30px;
+    margin: 30px;
+}
+
+/* cart page */
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+    background-color: var(--dark-green);
+    color: var(--white);
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: var(--font-family-base);
 }
 
 /* media query */

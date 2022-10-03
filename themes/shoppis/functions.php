@@ -33,8 +33,12 @@ remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 function add_google_fonts()
 {
 
-    wp_enqueue_style('add_google_fonts', 'https://fonts.google.com/specimen/Libre+Baskerville?query=Libre+Baskerville',
-                                         'https://fonts.google.com/specimen/Montserrat?query=Montserrat', false);
+    wp_enqueue_style(
+        'add_google_fonts',
+        'https://fonts.google.com/specimen/Libre+Baskerville?query=Libre+Baskerville',
+        'https://fonts.google.com/specimen/Montserrat?query=Montserrat',
+        false
+    );
 
     add_action('wp_enqueue_scripts', 'add_google_fonts');
 }
@@ -204,3 +208,14 @@ add_filter('woocommerce_product_tabs', 'woo_remove_product_tabs', 60);
 // }
 
 // add_filter('woocommerce_product_tabs', 'woo_remove_product_info_if_block', 61);
+
+// change text on proceed to checkout btn
+remove_action('woocommerce_proceed_to_checkout', 'woocommerce_button_proceed_to_checkout', 20);
+
+function custom_button_proceed_to_checkout()
+{
+    echo '<a href="' . esc_url(wc_get_checkout_url()) . '" class="checkout-button button alt wc-forward">' .
+        __("Checkout", "woocommerce") . '</a>';
+}
+
+add_action('woocommerce_proceed_to_checkout', 'custom_button_proceed_to_checkout', 20);
