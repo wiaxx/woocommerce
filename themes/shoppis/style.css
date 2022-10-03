@@ -446,12 +446,30 @@ div.woocommerce {
 
 /* customer page */
 .woocommerce-account .woocommerce-MyAccount-content {
-    width: 80vw;
+    width: 60vw;
+    margin: auto;
+    float: none;
+}
+
+.woocommerce-MyAccount-content p {
+    margin: 40px;
 }
 
 .woocommerce-Addresses,
 .woocommerce-Address-title {
-    width: 100px;
+    width: 100%;
+}
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+    margin: 40px 0 80px 0;
+}
+
+.woocommerce-MyAccount-content .woocommerce-EditAccountForm {
+    margin: 60px 0 40px 0;
+}
+
+.edit-account p:last-child {
+    margin: 15px 0 0 0;
 }
 
 /* media query */
@@ -460,6 +478,14 @@ div.woocommerce {
     .image-block, .text-block {
         width: 100vw;
         min-height: 450px;
+    }
+
+    div.woocommerce {
+        width: 100vw;
+    }
+
+    .woocommerce-account .woocommerce-MyAccount-content {
+        width: 100vw;
     }
 
 }
