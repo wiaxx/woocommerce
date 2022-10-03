@@ -1,9 +1,9 @@
 <!-- Intro block -->
 <div class="intro-block">
 
-    <h2 class="intro-title">
+    <h1 class="intro-title">
         <?php the_field('intro_heading'); ?>
-    </h2>
+    </h1>
 
     <p class="intro-text">
         <?php the_field('intro_text'); ?>

@@ -9,6 +9,8 @@ Tested upto: 5.4
 
 :root {
     --white: #FFFFFF;
+    --white-border: #D9D9D9;
+    --semi-white: #FCFCFC;
     --pale-green: #BFC7C7;
     --dark-green: #617C7C;
     --dark-green-opacity: #617c7c53;
@@ -24,10 +26,13 @@ Tested upto: 5.4
 
 p, a {
     font-family: var(--font-family-base);
+    text-decoration: none;
+    color: var(--dark-gray-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-headings);
+    color: var(--dark-gray-text);
 }
 
 button {
@@ -66,13 +71,13 @@ header {
 }
 
 header a {
-    text-decoration: none;
     color: var(--white);
     font-family: var(--font-family-base);
 }
 
 .header-title {
     text-transform: uppercase;
+    color: var(--white);
 }
 
 /* styling main menu */
@@ -92,7 +97,6 @@ header a {
 }
 
 .menu-item a {
-    text-decoration: none;
     color: var(--white);
     font-family: var(--font-family-base);
 }
@@ -139,11 +143,6 @@ header a {
     text-align: center;
 }
 
-.intro-title {
-    font-family: var(--font-family-headings);
-    color: var(--dark-grey-text);
-}
-
 /* product highlight block */
 .product-highlight-block {
     width: 100vw;
@@ -183,7 +182,6 @@ header a {
 }
 
 .highlight-info a {
-    text-decoration: none;
     margin-bottom: 15px;
     color: var(--dark-gray-text);
 }
@@ -199,7 +197,6 @@ header a {
 }
 
 .highlight-description {
-    color: var(--dark-gray-text);
     margin-bottom: 50px;
 }
 
@@ -209,18 +206,164 @@ header a {
     color: var(--white);
 }
 
+/* contact form */
+.wpcf7-form {
+    width: 50%;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.info-title {
+    text-align: center;
+    margin: 30px;
+}
+
+.info-page > p{
+    width: 40%;
+    margin: auto;
+}
+
+.wpcf7-form input, .wpcf7-form textarea {
+    width: 100%;
+    height: 35px;
+    background-color: var(--semi-white);
+    border: 1px solid var(--white-border);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.wpcf7-form textarea {
+    height: auto;
+}
+
+.info-page .wpcf7-submit {
+    background-color: var(--dark-green);
+    color: var(--white);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0;
+    width: 30%;
+}
+
+/* half text half image */
+.image-text-block {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white);
+}
+
+.image-block,
+.text-block {
+    width: 50vw;
+    height: 450px;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.image-block img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.image-text-block~.image-text-block {
+    flex-direction: row-reverse;
+}
+
+.text-block a {
+    margin-bottom: 15px;
+}
+
+.text-block h2 {
+    margin-bottom: 19px;
+}
+
+.text-block p {
+    margin-bottom: 50px;
+}
+
+.text-block button {
+    width: 120px;
+}
+
+
+/* collection block */
+.collection-block {
+    width: 100vw;
+    background-color: var(--pale-green);
+    padding: 20px;
+}
+
+.collection-title {
+    margin: 80px 0 25px 50px;
+}
+
+.collection-desc {
+    margin: 0 0 70px 50px;
+    width: 40%;
+}
+
+.collection-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.collection-category {
+    width: 40%;
+    margin: 20px;
+}
+
+.collection-img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.collection-text h2,
+.collection-text p,
+.collection-text a {
+    margin: 10px;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+
+    .image-block, .text-block {
+        width: 100vw;
+        min-height: 450px;
+    }
+
+}
+
+/* media query for screens smaller than 992px */
+@media screen and (max-width: 992px) {
+
+    .collection-category {
+        width: 80vw;
+    }
+    
+}
+
 /* news */
 .index {
     background-color: #BFC7C7;
 }
 
-.all-news-wrapper{
+.all.news-wrapper {
     margin-top: 150px;
     width: 250px;
-	font-size: 14px;
-	height: 20px;
+    font-size: 14px;
+    height: 20px;
     letter-spacing: 0.2px;
-	display: inline-block;
+    display: inline-block;
     margin-left: 120px;
     padding: 10px;
     color: #353434;
@@ -230,20 +373,20 @@ header a {
     font-size: 20px;
     color: #617C7C;
 }
+
 .more-link {
     margin-top: 5px;
     color: #617C7C;
 }
 
 .all-news-title {
-margin-bottom: 15px;   
-color: #353434;
+    margin-bottom: 15px;
+    color: #353434;
 }
 
 .all-news-content {
-    background-color: rgb(255, 255, 255);
+    background-color: #FFFFFF;
 }
 
 .news-background {
-    background-color: #FFFFFF;
-}
+background-color: #FFFFFF;}

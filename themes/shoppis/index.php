@@ -1,6 +1,8 @@
 <?php get_header(); ?>
+<?php $image = get_field('background_image'); ?>
 
 <div class="index">
+
 <?php
 $the_query = new WP_Query(array(
     'posts_per_page' => 6,
@@ -21,7 +23,6 @@ $the_query = new WP_Query(array(
       <span class="date"> <?php the_time(get_option('date_format')); ?> </span>
      <?php the_content(); ?> 
         </div>
-
         </div>
 
 
