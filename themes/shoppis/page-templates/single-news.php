@@ -1,4 +1,4 @@
- <!-- <?php /* Template Name: Single News */ ?> 
+ <?php /* Template Name: Single News */ ?> 
 
 
 <?php
@@ -22,6 +22,6 @@ $the_query = new WP_Query(array(
     <?php wp_reset_postdata(); ?>
     <?php endif; ?>
 
-<a href="./page-news.php">Go back to News</a>
+<a href="./index">Go back to News</a>
 
-<?php get_footer(); ?> -->
+<?php get_footer(); ?>
