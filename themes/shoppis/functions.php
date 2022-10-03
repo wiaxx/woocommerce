@@ -200,3 +200,12 @@ function echo_title_in_post($atts, $content = null)
 }
 
 add_shortcode('the_title', 'echo_title_in_post');
+
+// support to add thumbnail in the_content
+function featured_image($post, $atts, $content = null)
+{
+    if (has_post_thumbnail($post))
+        return '<div class="info-thumbnail">' . get_the_post_thumbnail($post, 'large') . '</div>';
+}
+
+add_shortcode('featured_image', 'featured_image');
