@@ -66,18 +66,38 @@ header {
     display: flex;
     justify-content: space-between;
     color: var(--white);
-    background-color: var(--dark-green-opacity);
-    padding: 15px 10px 0 10px;
+    /* text-shadow: 1px 1px var(--dark-gray-text); */
+    padding: 15px 10px 15px 10px;
 }
 
 header a {
     color: var(--white);
-    font-family: var(--font-family-base);
 }
 
 .header-title {
     text-transform: uppercase;
     color: var(--white);
+}
+
+.header-icons {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-icons svg {
+    height: 24px;
+    width: 24px;
+}
+
+.woocommerce-page header {
+    position: relative;
+}
+
+.woocommerce-page header a,
+.woocommerce-page .header-title {
+    color: var(--dark-gray-text);
 }
 
 /* styling main menu */
@@ -196,6 +216,17 @@ header a {
     font-family: var(--font-family-base);
 }
 
+.highlight-description {
+    margin-bottom: 50px;
+}
+
+.highlight-info button,
+.highlight-info button a {
+    width: 130px;
+    color: var(--white);
+}
+
+/* footer */
 .footer-wrap {
    background-color: #617C7C;
    height: 300px;
@@ -252,15 +283,6 @@ header a {
     color: #FFFFFF;  
     margin-top: -10px;
 }
-.highlight-description {
-    margin-bottom: 50px;
-}
-
-.highlight-info button,
-.highlight-info button a {
-    width: 130px;
-    color: var(--white);
-}
 
 /* contact form */
 .wpcf7-form {
@@ -274,9 +296,9 @@ header a {
     margin: 30px;
 }
 
-.info-page > p{
-    width: 40%;
-    margin: auto;
+.info-page > p {
+    width: 45%;
+    margin: 20px auto;
 }
 
 .wpcf7-form input, .wpcf7-form textarea {
@@ -300,6 +322,20 @@ header a {
     cursor: pointer;
     border-radius: 0;
     width: 30%;
+}
+
+/* about page featured image */
+.info-thumbnail {
+    width: 60vw;
+    height: 430px;
+    margin: 0 auto 50px;
+}
+
+.info-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* half text half image */
@@ -349,7 +385,6 @@ header a {
     width: 120px;
 }
 
-
 /* collection block */
 .collection-block {
     width: 100vw;
@@ -389,6 +424,27 @@ header a {
     margin: 10px;
 }
 
+/* woocommerce pages styling */
+div.woocommerce {
+    width: 80vw;
+    margin: auto;
+}
+
+.woo-title {
+    text-align: center;
+    margin: 30px;
+}
+
+/* cart page */
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce a.button.alt:hover {
+    background-color: var(--dark-green);
+    color: var(--white);
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: var(--font-family-base);
+}
+
 /* media query */
 @media screen and (max-width: 600px) {
 
@@ -406,4 +462,44 @@ header a {
         width: 80vw;
     }
     
+}
+
+/* news */
+.index {
+    background-color: #BFC7C7;
+}
+
+.all-news-wrapper {
+    margin-top: 150px;
+    width: 250px;
+    font-size: 14px;
+    height: 20px;
+    letter-spacing: 0.2px;
+    display: inline-block;
+    margin-left: 120px;
+    padding: 10px;
+    color: #343435;
+}
+
+.permalink {
+    font-size: 20px;
+    color: #617C7C;
+}
+
+.more-link {
+    margin-top: 5px;
+    color: #617C7C;
+}
+
+.all-news-title {
+    margin-bottom: 15px;
+    color: #353434;
+}
+
+.all-news-content {
+    background-color: #FFFFFF;
+}
+
+.news-background {
+background-color: #FFFFFF;
 }

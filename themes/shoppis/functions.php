@@ -200,3 +200,22 @@ function echo_title_in_post($atts, $content = null)
 }
 
 add_shortcode('the_title', 'echo_title_in_post');
+
+// change text on proceed to checkout btn
+remove_action('woocommerce_proceed_to_checkout', 'woocommerce_button_proceed_to_checkout', 20);
+
+function custom_button_proceed_to_checkout()
+{
+    echo '<a href="' . esc_url(wc_get_checkout_url()) . '" class="checkout-button button alt wc-forward">' .
+        __("Checkout", "woocommerce") . '</a>';
+}
+
+add_action('woocommerce_proceed_to_checkout', 'custom_button_proceed_to_checkout', 20);
+// support to add thumbnail in the_content
+function featured_image($post, $atts, $content = null)
+{
+    if (has_post_thumbnail($post))
+        return '<div class="info-thumbnail">' . get_the_post_thumbnail($post, 'large') . '</div>';
+}
+
+add_shortcode('featured_image', 'featured_image');
