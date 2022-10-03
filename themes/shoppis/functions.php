@@ -219,3 +219,21 @@ function featured_image($post, $atts, $content = null)
 }
 
 add_shortcode('featured_image', 'featured_image');
+
+// merge tabs from My account page into one
+function remove_tabs_my_account($items)
+{
+    unset($items['dashboard']);
+    // unset($items['orders']);
+    unset($items['downloads']);
+    unset($items['edit-address']);
+    unset($items['payment-methods']);
+    // unset($items['edit-account']);
+    return $items;
+}
+
+add_filter('woocommerce_account_menu_items', 'remove_tabs_my_account', 999);
+
+// add content to dashboard tab on My account page
+// add_action('woocommerce_account_edit-account_endpoint',  'woocommerce_account_view_order');
+add_action('woocommerce_account_edit-account_endpoint',  'woocommerce_account_edit_address');
