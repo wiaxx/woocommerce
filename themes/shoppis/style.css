@@ -357,7 +357,7 @@ header a {
     background-color: #BFC7C7;
 }
 
-.all.news-wrapper {
+.all-news-wrapper {
     margin-top: 150px;
     width: 250px;
     font-size: 14px;
@@ -366,7 +366,7 @@ header a {
     display: inline-block;
     margin-left: 120px;
     padding: 10px;
-    color: #353434;
+    color: #343435;
 }
 
 .permalink {
@@ -389,4 +389,5 @@ header a {
 }
 
 .news-background {
-background-color: #FFFFFF;}
+background-color: #FFFFFF;
+}

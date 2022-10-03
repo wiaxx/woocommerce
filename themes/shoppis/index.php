@@ -16,12 +16,16 @@ $the_query = new WP_Query(array(
     <div class="all-news-wrapper">
 
     
-
     <div class="thumbnail"> <?php the_post_thumbnail('medium'); ?> </div>
     <div class="news-background">
       <h3 class="all-news-title"><?php the_title(); ?> </h3>  
+      <a class="permalink" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+
       <span class="date"> <?php the_time(get_option('date_format')); ?> </span>
+
      <?php the_content(); ?> 
+    <?php the_excerpt() ?>
+
         </div>
         </div>
 
