@@ -63,9 +63,8 @@ header {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     color: var(--white);
-    /* background-color: var(--dark-green-opacity); */
+    /* text-shadow: 1px 1px var(--dark-gray-text); */
     padding: 15px 10px 15px 10px;
 }
 
@@ -78,8 +77,25 @@ header a {
     color: var(--white);
 }
 
+.header-icons {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-icons svg {
+    height: 24px;
+    width: 24px;
+}
+
 .woocommerce-page header {
     position: relative;
+}
+
+.woocommerce-page header a,
+.woocommerce-page .header-title {
+    color: var(--dark-gray-text);
 }
 
 /* styling main menu */
@@ -120,23 +136,6 @@ header a {
     color: var(--dark-gray-text);
     padding: 5px;
     margin: auto;
-}
-
-.header-icons {
-    width: 100px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.header-icons svg {
-    height: 24px;
-    width: 24px;
-}
-
-.woocommerce-page header a,
-.woocommerce-page .header-title {
-    color: var(--dark-gray-text);
 }
 
 /* features/faq-block */
