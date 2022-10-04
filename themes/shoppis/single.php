@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
  <!-- Hero Block -->
- <div class="hero-block-news">
+ <div class="hero-block">
 
  <?php
 $image = the_post_thumbnail('large');
@@ -19,6 +19,7 @@ $image = the_post_thumbnail('large');
 
     <span class="date"> <?php the_time(get_option('date_format')); ?> </span>
       <h3 class="single-news-title"><?php the_title(); ?> </h3>
+      <div class="single-thumbnail"> <?php the_post_thumbnail('medium') ?> </div>
       <div class="single-news-content"> <?php the_content(); ?> </div>
       
     </div> 

@@ -505,8 +505,11 @@ background-color: #FFFFFF;
 }
 
 /* single news */
-.single-news-wrapper {
-    height: 180px;
+.single-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
    
 }
 .date {
@@ -526,11 +529,11 @@ background-color: #FFFFFF;
 }
 
 .single-news-content{
-    display: flex;
-    justify-content: center;
-    text-align: center;
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 25px;
+    width: 50%;
+    margin-left: 26%;
+    line-height: 25px;
 }
 
 .hero-block-news {
