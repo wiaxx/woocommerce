@@ -239,3 +239,8 @@ add_filter('woocommerce_account_menu_items', 'remove_tabs_my_account', 999);
 add_action('woocommerce_account_dashboard',  'woocommerce_account_orders');
 add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_address');
 add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_account');
+
+
+
+
+
