@@ -239,3 +239,12 @@ add_filter('woocommerce_account_menu_items', 'remove_tabs_my_account', 999);
 add_action('woocommerce_account_dashboard',  'woocommerce_account_orders');
 add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_address');
 add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_account');
+
+// display two columns with products instead of three 
+add_filter('loop_shop_columns', 'loop_columns', 999);
+if (!function_exists('loop_columns')) {
+    function loop_columns()
+    {
+        return 2; // 3 products per row
+    }
+}
