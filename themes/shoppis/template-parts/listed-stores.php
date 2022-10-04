@@ -7,4 +7,3 @@
 <p class="store-hours"><?php the_field('store_opening_hours', get_the_id()); ?> </p> 
 </div>
 
-<?php get_footer(); ?>
