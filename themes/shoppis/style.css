@@ -506,6 +506,19 @@ div.woocommerce {
     opacity: 1;
 }
 
+.woocommerce .woocommerce-ordering {
+    width: 80vw;
+    margin: 0 auto 10px auto;
+    float: none;
+}
+
+.orderby {
+    border-radius: 5px;
+    border: 1px solid var(--sort-white);
+    height: 1.5rem;
+    color: var(--dark-gray-text);
+}
+
 /* news */
 .index {
     background-color: #BFC7C7;
