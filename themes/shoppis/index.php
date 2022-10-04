@@ -40,5 +40,3 @@ $the_query = new WP_Query(array(
     
 
 <?php get_footer(); ?>
-<?php get_header() ?>
-<?php get_footer(); ?>
