@@ -11,8 +11,7 @@ get_header();
     <?php
     if (is_product_category()) {
     ?>
-        <h1>Show two categories</h1>
-
+        <?php get_template_part('template-parts/two-categories'); ?>
     <?php
     } ?>
 </div>
