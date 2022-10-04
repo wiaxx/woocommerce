@@ -85,19 +85,19 @@ margin-right: 80%;
 width: 100%;
 }
 
+
+/* store */
 .listed-stores {
-    margin-top: 150px;
     margin: 0;
     width: 200px;
     font-size: 14px;
-    height: 60px;
     letter-spacing: 0.2px;
-    display: inline-block;
     margin-left: 120px;
     color: #343435;
-    background-color: #BFC7C7;
+    background-color: #fff;
+    height: 150px;
 }
 
-.stores-wrapper {
-    background-color: #FFFFFF;
+.stores {
+    background-color: #BFC7C7;
 }
