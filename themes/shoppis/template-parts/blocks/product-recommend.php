@@ -1,4 +1,7 @@
+<<<<<<< HEAD
     <div class="products-recommend">
+=======
+>>>>>>> main
 <?php 
 
 // For categories 
@@ -18,6 +21,7 @@
 
     echo "<img src='{$image}' alt='' width='200' height='200' />";
     
+<<<<<<< HEAD
     
  }
 
@@ -57,3 +61,11 @@
 
 
     
+=======
+
+}
+
+}
+    
+ }    
+>>>>>>> main
