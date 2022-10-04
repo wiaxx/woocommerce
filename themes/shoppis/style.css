@@ -445,6 +445,42 @@ div.woocommerce {
     font-family: var(--font-family-base);
 }
 
+.products-recommend{
+    color: #353434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.has-medium-font-size  {
+margin-left: 20%;
+margin-right: 80%;
+width: 100%;
+}
+
+.has-small-font-size {
+margin-left: 20%;
+margin-right: 80%;
+width: 100%;
+}
+
+/* store */
+.listed-stores {
+    margin: 0;
+    width: 200px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    color: #343435;
+    background-color: #fff;
+    height: 150px;
+}
+
+.stores {
+    background-color: #BFC7C7;
+}
 /* customer page */
 .woocommerce-account .woocommerce-MyAccount-content {
     width: 60vw;
@@ -559,6 +595,51 @@ div.woocommerce {
 background-color: #FFFFFF;
 }
 
+/* single news */
+.single-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+.date {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.single-news-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.single-news-content{
+    font-size: 15px;
+    margin-top: 25px;
+    width: 50%;
+    margin-left: 26%;
+    line-height: 25px;
+}
+
+.hero-block-news {
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+}
+
+.hero-block-news img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+
 /* media query */
 @media screen and (max-width: 600px) {
 
@@ -574,7 +655,6 @@ background-color: #FFFFFF;
     .woocommerce-account .woocommerce-MyAccount-content {
         width: 100vw;
     }
-
 }
 
 /* media query for screens smaller than 992px */
@@ -582,6 +662,5 @@ background-color: #FFFFFF;
 
     .collection-category {
         width: 80vw;
-    }
-
+    } 
 }
