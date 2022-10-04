@@ -14,6 +14,15 @@ get_header();
         <?php get_template_part('template-parts/two-categories'); ?>
     <?php
     } ?>
+
+    <?php
+    if (is_product()) {
+    ?>
+    <h1>hejsan</h1>
+        <?php // get_template_part('template-parts/two-categories'); ?>
+    <?php
+    } ?>
+
 </div>
 
 <?php get_footer(); ?>
