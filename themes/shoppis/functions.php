@@ -257,3 +257,6 @@ function remove_product_result_count()
 }
 
 add_action('after_setup_theme', 'remove_product_result_count', 99);
+
+// remove add to cart btn on category page
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
