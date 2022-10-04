@@ -573,6 +573,36 @@ width: 100%;
     display: none;
 }
 
+.woocommerce-product-gallery__image {
+    margin: 20px;
+}
+
+.woocommerce-notices-wrapper {
+    margin: 50px;
+}
+
+.woocommerce div.product form.cart .button {
+    background-color: var(--dark-green);
+    color: var(--white);
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: var(--font-family-base);
+}
+
+.woocommerce div.product div.summary {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.woocommerce div.product form.cart .variations select {
+    border-radius: 5px;
+    border: 1px solid var(--sort-white);
+    height: 1.5rem;
+    color: var(--dark-gray-text);
+}
+
 /* news */
 .index {
     background-color: #BFC7C7;
