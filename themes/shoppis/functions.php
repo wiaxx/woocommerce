@@ -248,3 +248,12 @@ if (!function_exists('loop_columns')) {
         return 2; // 3 products per row
     }
 }
+
+// remove product result count from category page
+function remove_product_result_count()
+{
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+    remove_action('woocommerce_after_shop_loop', 'woocommerce_result_count', 20);
+}
+
+add_action('after_setup_theme', 'remove_product_result_count', 99);
