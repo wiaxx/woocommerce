@@ -1,14 +1,9 @@
     <div class="products-recommend">
 
-<!-- // For categories  -->
 <?php 
     $categories = get_field('categories');
      $products = get_field('products');
 ?>
-
-
-
-
 
 
 <?php
@@ -18,7 +13,6 @@
      if( $products = get_term_by( 'id', $cat_id, 'product_cat' ) ){ ?>  
     <div class="cat-name"> <?php echo $products->name; ?> </div>
    
-
 
    <?php
     $thumbnail_id = get_term_meta( $cat_id, 'thumbnail_id', true ); 
