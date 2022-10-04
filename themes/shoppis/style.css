@@ -71,12 +71,17 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
+
+
+
 
 .has-medium-font-size  {
 margin-left: 20%;
 margin-right: 80%;
 width: 100%;
+margin-top: 100px;
 }
 
 .has-small-font-size {
@@ -101,3 +106,4 @@ width: 100%;
 .stores-wrapper {
     background-color: #FFFFFF;
 }
+
