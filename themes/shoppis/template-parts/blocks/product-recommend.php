@@ -1,34 +1,53 @@
-    <div class="products-recommend">
+<?php
+// $categories = get_field('categories');
+$title = get_field('product_recommend_title');
+$desc = get_field('product_recommend_text');
+$products = get_field('products');
 
-<?php 
-    $categories = get_field('categories');
-     $products = get_field('products');
+echo '<pre>';
+var_dump($products);
+echo '</pre>';
 ?>
 
-<?php
-     if ($categories) {
-        foreach ($categories as $cat_id) {
+<div class="products-recommend">
 
-     if( $products = get_term_by( 'id', $cat_id, 'product_cat' ) ){ ?>  
-    <div class="cat-name"> <?php echo $products->name; ?> </div>
-   
+    <h1 class="recommend-title">
+        <?php echo $title; ?>
+    </h1>
 
-   <?php
-    $thumbnail_id = get_term_meta( $cat_id, 'thumbnail_id', true ); 
+    <p class="recommend-text">
+        <?php echo $desc; ?>
+    </p>
 
-    $image = wp_get_attachment_url( $thumbnail_id ); 
+    <?php if ($products) :
+        foreach ($products as $product) { ?>
 
-    echo "<img src='{$image}' alt='' width='200' height='200' />";
-    
- }
+            <div class="product-recommend">
 
-  }  
+                <div class="recommend-img">
+                    <?php echo wp_get_attachment_image($product->ID, 'large'); ?>
+                </div>
 
-    }
- ?>
- </div>
+                <div class="recommend-info">
+                    <h2>
+                        <?php echo $product->post_title ?>
+                    </h2>
 
-  
- <!-- <p class="prod-title"><?php the_field('product_recommend_title', get_the_id()); ?></p> 
- <p class="prod-text"> <?php the_field('product_recommend_text', get_the_id()); ?></p> 
-<p class="prod-img"><?php the_field('product_recommend_img1', get_the_id()); ?> </p>  -->
+                    <p>
+                        <?php echo $product->post_excerpt ?>
+                    </p>
+
+                    <!-- <a href="<?php // echo get_term_link($category); ?>">
+                        View collection
+                    </a> -->
+                </div>
+
+            </div>
+
+    <?php }
+    endif;
+
+
+
+
+    ?>

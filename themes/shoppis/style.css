@@ -66,7 +66,7 @@ a {
     font-family: var(--font-family-base);
 }
 
-.products-recommend{
+/* .products-recommend{
  background-color: #BFC7C7;
  color: #353434;
  display: flex;
@@ -86,7 +86,7 @@ margin-top: 100px;
 margin-left: 20%;
 margin-right: 80%;
 width: 100%;
-}
+} */
 
 .listed-stores {
     margin-top: 150px;
