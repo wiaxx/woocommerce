@@ -506,6 +506,12 @@ div.woocommerce {
     margin: 15px 0 0 0;
 }
 
+.woocommerce-MyAccount-content h2,
+.woocommerce-EditAccountForm h2 {
+    text-align: center;
+    margin: 20px
+}
+
 /* product category page */
 .tax-product_cat .woocommerce,
 .single-product .woocommerce {

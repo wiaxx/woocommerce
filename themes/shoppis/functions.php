@@ -240,6 +240,25 @@ add_action('woocommerce_account_dashboard',  'woocommerce_account_orders');
 add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_address');
 add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_account');
 
+// add title before my account content
+add_action('woocommerce_before_account_orders', 'add_order_title');
+function add_order_title()
+{
+    echo '<h2>Order History</h2>';
+}
+
+add_action('woocommerce_before_edit_account_address_form', 'add_address_title');
+function add_address_title()
+{
+    echo '<h2>Addresses</h2>';
+}
+
+add_action('woocommerce_edit_account_form_start', 'add_account_title');
+function add_account_title()
+{
+    echo '<h2>Account Details</h2>';
+}
+
 // display two columns with products instead of three 
 add_filter('loop_shop_columns', 'loop_columns', 999);
 if (!function_exists('loop_columns')) {
@@ -262,23 +281,25 @@ add_action('after_setup_theme', 'remove_product_result_count', 99);
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
 
 // remove show sku on single product page
-add_filter( 'wc_product_sku_enabled', '__return_false' );
+add_filter('wc_product_sku_enabled', '__return_false');
 
 // add product gallery support
-function product_gallery_support() {
-    add_theme_support( 'wc-product-gallery-zoom' );
-    add_theme_support( 'wc-product-gallery-lightbox' );
-    add_theme_support( 'wc-product-gallery-slider' );
+function product_gallery_support()
+{
+    add_theme_support('wc-product-gallery-zoom');
+    add_theme_support('wc-product-gallery-lightbox');
+    add_theme_support('wc-product-gallery-slider');
 }
 
-add_action( 'after_setup_theme', 'product_gallery_support' );
+add_action('after_setup_theme', 'product_gallery_support');
 
 // change number of upsells output
-add_filter( 'woocommerce_upsell_display_args', 'wc_change_number_related_products', 20 );
+add_filter('woocommerce_upsell_display_args', 'wc_change_number_related_products', 20);
 
-function wc_change_number_related_products( $args ) {
- 
- $args['posts_per_page'] = 4;
- $args['columns'] = 2; //change number of upsells here
- return $args;
+function wc_change_number_related_products($args)
+{
+
+    $args['posts_per_page'] = 4;
+    $args['columns'] = 2; //change number of upsells here
+    return $args;
 }
