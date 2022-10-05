@@ -272,3 +272,13 @@ function product_gallery_support() {
 }
 
 add_action( 'after_setup_theme', 'product_gallery_support' );
+
+// change number of upsells output
+add_filter( 'woocommerce_upsell_display_args', 'wc_change_number_related_products', 20 );
+
+function wc_change_number_related_products( $args ) {
+ 
+ $args['posts_per_page'] = 2;
+ $args['columns'] = 2; //change number of upsells here
+ return $args;
+}
