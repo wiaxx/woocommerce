@@ -278,7 +278,7 @@ add_filter( 'woocommerce_upsell_display_args', 'wc_change_number_related_product
 
 function wc_change_number_related_products( $args ) {
  
- $args['posts_per_page'] = 2;
+ $args['posts_per_page'] = 4;
  $args['columns'] = 2; //change number of upsells here
  return $args;
 }

@@ -574,6 +574,15 @@ width: 100%;
     width: 40vw;
 }
 
+.single-product .woocommerce .product .summary {
+    float: left;
+    margin: 20px;
+}
+
+.single-product .woocommerce .product .images {
+    margin-left: 10%;
+}
+
 .single-product .woocommerce div.product .woocommerce-tabs {
     width: 80vw;
     margin: auto;
@@ -628,15 +637,22 @@ width: 100%;
 
 .up-sells {
     background-color: var(--pale-green);
-    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 50px;
 }
 
+.up-sells h2 {
+    margin: 20px 0 20px 0;
+}
+
 .woocommerce .products ul, .woocommerce ul.products {
     margin: 0;
+}
+
+.single-product .woocommerce .products ul.products.columns-2 li.product {
+    width: 30%;
 }
 
 /* news */
