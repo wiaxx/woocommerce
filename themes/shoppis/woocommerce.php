@@ -4,17 +4,16 @@ get_header();
 
 <div class="woocommerce">
 
-    <?php
-    woocommerce_content();
-    ?>
+    <?php woocommerce_content(); ?>
 
-    <?php
-    if (is_product_category()) {
-    ?>
-        <h1>Show two categories</h1>
+    <?php if (is_product_category()) : ?>
+        <?php get_template_part('template-parts/two-categories'); ?>
+    <?php endif; ?>
 
-    <?php
-    } ?>
+    <?php if (is_product()) : ?>
+        <?php get_template_part('template-parts/half-img-text'); ?>
+    <?php endif; ?>
+
 </div>
 
 <?php get_footer(); ?>
