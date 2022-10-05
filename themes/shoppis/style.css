@@ -652,8 +652,13 @@ background-color: #FFFFFF;
     margin-left: 320px;
     margin-top: 60px;
 }
+
 .search-result {
-background-color: yellow;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 40px;
+width: 100px;
 }
 
 .search-title {
@@ -661,6 +666,15 @@ background-color: yellow;
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    margin-top: 150px;
+    margin-left: 40px;
+}
+
+.looking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
     margin-top: 150px;
     margin-left: 40px;
 }
