@@ -1,39 +1,17 @@
 <?php get_header(); ?>
 
-<h3> <?php the_title('intro_heading'); ?> 
-<?php the_content('intro_text'); ?> </h3>
+<?php if ( $page_id = get_option( 'page_for_posts' ) ) {
 
-<?php get_field('background_image'); ?>
+if ( $post = get_post( $page_id ) ) {
 
+    setup_postdata( $post );      
 
+    the_content();
 
-<!-- Hero Block -->
-<div class="hero-block">
+    wp_reset_postdata(); 
+}
 
-<?php
-$image = the_field('background_image');
-?>
-
-
-<?php
-  if ($image) : echo wp_get_attachment_image($image['id'], 'large');
-   endif;
-   ?>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} ?>
 <div class="index">
 
 <?php
@@ -59,13 +37,13 @@ $the_query = new WP_Query(array(
 
         </div>
         </div>
+        
 
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
     <?php endif; ?>
     
-    </div>
-    </div>
+   
     
 
 <?php get_footer(); ?>
