@@ -321,6 +321,17 @@ header a {
     cursor: pointer;
     border-radius: 0;
     width: 30%;
+    margin: 0;
+}
+
+.wpcf7-form p label {
+    padding: 10px;
+}
+
+.wpcf7-form p:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 /* about page featured image */
