@@ -1,4 +1,7 @@
 <!-- Intro block -->
+<?php
+$btn_text = get_field('intro_button_text');
+?>
 
 <div class="intro-block">
 
@@ -10,8 +13,10 @@
         <?php the_field('intro_text'); ?>
     </p>
 
-    <button>
-        <?php the_field('intro_button_text'); ?>
-    </button>
+    <?php if ($btn_text) : ?>
+        <button>
+            <?php echo $btn_text; ?>
+        </button>
+    <?php endif; ?>
 
 </div>
