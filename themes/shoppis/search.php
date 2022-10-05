@@ -3,6 +3,7 @@
 
 <div class="search-title"> <?php the_title(); ?> </div>
 <p class="looking">What are you looking for? </p>
+
 <div class="search-container">
     <div class="search-form">
     <?php get_search_form(); ?>
@@ -15,6 +16,7 @@
 
              <a href="<?php the_permalink(); ?>">
              <?php the_post_thumbnail('thumbnail') ?>
+
              </a> 
             </p>
 
