@@ -5,7 +5,6 @@
      $products = get_field('products');
 ?>
 
-
 <?php
      if ($categories) {
         foreach ($categories as $cat_id) {
@@ -28,3 +27,8 @@
     }
  ?>
  </div>
+
+  
+ <!-- <p class="prod-title"><?php the_field('product_recommend_title', get_the_id()); ?></p> 
+ <p class="prod-text"> <?php the_field('product_recommend_text', get_the_id()); ?></p> 
+<p class="prod-img"><?php the_field('product_recommend_img1', get_the_id()); ?> </p>  -->

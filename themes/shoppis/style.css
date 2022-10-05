@@ -67,15 +67,13 @@ a {
 }
 
 .products-recommend{
-    color: #353434;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+ background-color: #BFC7C7;
+ color: #353434;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 100px;
 }
-
-
-
 
 .has-medium-font-size  {
 margin-left: 20%;
