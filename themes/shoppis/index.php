@@ -1,11 +1,19 @@
 <?php get_header(); ?>
 
+<h3> <?php the_title('intro_heading'); ?> 
+<?php the_content('intro_text'); ?> </h3>
+
+<?php get_field('background_image'); ?>
+
+
+
 <!-- Hero Block -->
 <div class="hero-block">
 
 <?php
-$image = get_field('background-image');
+$image = the_field('background_image');
 ?>
+
 
 <?php
   if ($image) : echo wp_get_attachment_image($image['id'], 'large');
@@ -14,7 +22,17 @@ $image = get_field('background-image');
 </div>
 
 
-<h3 class="index-title"> <?php the_title(); ?> </h3>  
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="index">
 
@@ -41,8 +59,6 @@ $the_query = new WP_Query(array(
 
         </div>
         </div>
-
-
 
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
