@@ -92,16 +92,33 @@ header a {
 }
 
 .woocommerce-page header,
-.page-template-search header {
-position: relative;
+
+.page-template-search header,
+
+.search-results header {
+
+    position: relative;
+
 }
 
+
+
 .woocommerce-page header a,
+
 .woocommerce-page .header-title,
+
 .page-template-search header a,
-.page-template-search .header-title {
-color: var(--dark-gray-text);
+
+.page-template-search .header-title,
+
+.search-results header a,
+
+.search-results .header-title {
+
+    color: var(--dark-gray-text);
+
 }
+
 
 /* styling main menu */
 .menu-main-container {

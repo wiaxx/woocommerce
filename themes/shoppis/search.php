@@ -13,12 +13,7 @@
     <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
         <div class="search-result">
-            <p>
-
-
-             <!-- <?php the_post_thumbnail('thumbnail') ?>  -->
-
-            </p>
+            
 
                 <span><?php the_excerpt(); ?></span>
              </div>
