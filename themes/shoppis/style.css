@@ -629,6 +629,10 @@ width: 100%;
 .up-sells {
     background-color: var(--pale-green);
     height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 50px;
 }
 
 .woocommerce .products ul, .woocommerce ul.products {
