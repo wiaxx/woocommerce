@@ -260,3 +260,25 @@ add_action('after_setup_theme', 'remove_product_result_count', 99);
 
 // remove add to cart btn on category page
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+
+// remove show sku on single product page
+add_filter( 'wc_product_sku_enabled', '__return_false' );
+
+// add product gallery support
+function product_gallery_support() {
+    add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
+}
+
+add_action( 'after_setup_theme', 'product_gallery_support' );
+
+// change number of upsells output
+add_filter( 'woocommerce_upsell_display_args', 'wc_change_number_related_products', 20 );
+
+function wc_change_number_related_products( $args ) {
+ 
+ $args['posts_per_page'] = 4;
+ $args['columns'] = 2; //change number of upsells here
+ return $args;
+}
