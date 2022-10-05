@@ -10,8 +10,8 @@
 
     $loop = new WP_Query( $args ); 
     ?>
-
     <div class="stores">
+        <h1>Our Stores</h1>
      <?php 
     
     if ($loop->have_posts()) : ?>
