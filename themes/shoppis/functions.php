@@ -240,7 +240,23 @@ add_action('woocommerce_account_dashboard',  'woocommerce_account_orders');
 add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_address');
 add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_account');
 
+// display two columns with products instead of three 
+add_filter('loop_shop_columns', 'loop_columns', 999);
+if (!function_exists('loop_columns')) {
+    function loop_columns()
+    {
+        return 2; // 3 products per row
+    }
+}
 
+// remove product result count from category page
+function remove_product_result_count()
+{
+    remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
+    remove_action('woocommerce_after_shop_loop', 'woocommerce_result_count', 20);
+}
 
+add_action('after_setup_theme', 'remove_product_result_count', 99);
 
-
+// remove add to cart btn on category page
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
