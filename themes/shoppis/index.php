@@ -1,5 +1,20 @@
 <?php get_header(); ?>
-<?php $image = get_field('background_image'); ?>
+
+<!-- Hero Block -->
+<div class="hero-block">
+
+<?php
+$image = get_field('background-image');
+?>
+
+<?php
+  if ($image) : echo wp_get_attachment_image($image['id'], 'large');
+   endif;
+   ?>
+</div>
+
+
+<h3 class="index-title"> <?php the_title(); ?> </h3>  
 
 <div class="index">
 
@@ -21,9 +36,7 @@ $the_query = new WP_Query(array(
       <h3 class="all-news-title"><?php the_title(); ?> </h3>  
       <a class="permalink" href="<?php the_permalink(); ?>" title ="<?php the_title_attribute(); ?>">
 
-      <span class="date"> <?php the_time(get_option('date_format')); ?> </span>
 
-     <?php the_content(); ?> 
     <?php the_excerpt() ?>
 
         </div>
