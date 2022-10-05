@@ -2,6 +2,7 @@
 <?php get_header() ?>
 
 <div class="search-title"> <?php the_title(); ?> </div>
+<h3 class="search-h3">SEARCH</h3>
 <p class="looking">What are you looking for? </p>
 
 <div class="search-container">
@@ -14,14 +15,14 @@
         <div class="search-result">
             <p>
 
-             <a href="<?php the_permalink(); ?>">
-             <?php the_post_thumbnail('thumbnail') ?>
 
-             </a> 
+             <!-- <?php the_post_thumbnail('thumbnail') ?>  -->
+
             </p>
 
                 <span><?php the_excerpt(); ?></span>
              </div>
+             <a class="toproduct" href="<?php the_permalink(); ?>"> VIEW COLLECTION</a> 
 
         <?php endwhile; ?>
         <?php else : ?>

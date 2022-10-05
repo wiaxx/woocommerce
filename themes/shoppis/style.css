@@ -624,10 +624,6 @@ background-color: #FFFFFF;
     object-position: center;
 }
 
-
-.search-container {
-}
-
 .search-form {
     margin-top: 200px;
     padding: 10px 10px;
@@ -647,26 +643,35 @@ background-color: #FFFFFF;
     color: #FFFFFF;
     height: 30px;
     width: 130px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     border: none;
     margin-left: 320px;
     margin-top: 60px;
 }
 
-.search-result {
+.search-h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.search-result span{
 display: flex;
 justify-content: center;
 align-items: center;
+margin-left: 400px;
 font-size: 14px;
 width: 600px;
-margin-top: -100px;
+margin-top: -200px;
+padding-bottom: 15px;
 }
 
 .search-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 0px;
     margin-top: 150px;
     margin-left: 40px;
 }
@@ -675,7 +680,17 @@ margin-top: -100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 80px;
+    margin-left: -340px;
     font-size: 14px;
-    margin-top: 150px;
+    margin-top: 140px;
+}
+
+.toproduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -363px;
+    padding-bottom: 15px;
+    font-size: 11px;
+    color: #617C7C;
 }
