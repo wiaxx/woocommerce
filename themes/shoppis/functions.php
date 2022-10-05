@@ -303,3 +303,11 @@ function wc_change_number_related_products($args)
     $args['columns'] = 2; //change number of upsells here
     return $args;
 }
+
+function add_text_before_drop_down() {
+    if(is_product_category()) :
+        echo '<p class="category-sort"> Sort </p>';
+    endif;
+}
+
+add_action('woocommerce_before_shop_loop','add_text_before_drop_down');

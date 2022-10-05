@@ -553,7 +553,8 @@ div.woocommerce {
     margin: auto;
 }
 
-.woocommerce .woocommerce-ordering {
+.woocommerce .woocommerce-ordering,
+.category-sort {
     width: 80vw;
     margin: 0 auto 10px auto;
     float: none;
