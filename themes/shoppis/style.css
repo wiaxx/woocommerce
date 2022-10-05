@@ -93,31 +93,18 @@ header a {
 }
 
 .woocommerce-page header,
-
 .page-template-search header,
-
-.search-results header {
-
+.search header {
     position: relative;
-
 }
 
-
-
 .woocommerce-page header a,
-
 .woocommerce-page .header-title,
-
 .page-template-search header a,
-
 .page-template-search .header-title,
-
-.search-results header a,
-
-.search-results .header-title {
-
+.search header a,
+.search .header-title {
     color: var(--dark-gray-text);
-
 }
 
 /* styling main menu */
