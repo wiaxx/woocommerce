@@ -92,16 +92,35 @@ header a {
     width: 24px;
 }
 
-.woocommerce-page header {
+.woocommerce-page header,
+
+.page-template-search header,
+
+.search-results header {
+
     position: relative;
+
 }
+
+
 
 .woocommerce-page header a,
-.woocommerce-page .header-title {
+
+.woocommerce-page .header-title,
+
+.page-template-search header a,
+
+.page-template-search .header-title,
+
+.search-results header a,
+
+.search-results .header-title {
+
     color: var(--dark-gray-text);
+
 }
 
-/* main menu */
+/* styling main menu */
 .menu-main-container {
     width: 29%;
 }
@@ -763,27 +782,73 @@ background-color: #FFFFFF;
     object-position: center;
 }
 
-/* media query for screens smaller than 992px */
-@media screen and (max-width: 992px) {
-
-    .collection-category {
-        width: 80vw;
-    }
+.search-form {
+    margin-top: 200px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
 }
 
-/* media query for screen smaller than 600px */
-@media screen and (max-width: 600px) {
+#s {
+    margin-left: 100px;
+    height: 40px;
+    width: 600px;
+    display: block;
+}
+#searchsubmit {
+    background-color: #617C7C;
+    color: #FFFFFF;
+    height: 30px;
+    width: 130px;
+    margin-bottom: 200px;
+    border: none;
+    margin-left: 320px;
+    margin-top: 60px;
+}
 
-    .image-block, .text-block {
-        width: 100vw;
-        min-height: 450px;
-    }
+.search-h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+}
 
-    div.woocommerce {
-        width: 100vw;
-    }
+.search-result span{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 400px;
+font-size: 14px;
+width: 600px;
+margin-top: -200px;
+padding-bottom: 15px;
+}
 
-    .woocommerce-account .woocommerce-MyAccount-content {
-        width: 100vw;
-    }
+.search-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+    margin-top: 150px;
+    margin-left: 40px;
+}
+
+.looking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -340px;
+    font-size: 14px;
+    margin-top: 140px;
+}
+
+.toproduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -363px;
+    padding-bottom: 15px;
+    font-size: 11px;
+    color: #617C7C;
 }
