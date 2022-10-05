@@ -533,6 +533,12 @@ div.woocommerce {
     background-color: var(--pale-green);
 }
 
+.term-description p {
+    width: 60vw;
+    margin: auto;
+    text-align: left;
+}
+
 .tax-product_cat .woocommerce .page-title,
 .tax-product_cat .woocommerce .term-description {
     text-align: center;
@@ -580,7 +586,7 @@ div.woocommerce {
 }
 
 .tax-product_cat .collection-block {
-    height: 900px;
+    height: 980px;
 }
 
 /* single product page */
